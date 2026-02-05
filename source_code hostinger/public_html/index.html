@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Watchtower</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Auth Screen -->
+    <div id="auth-screen">
+        <div class="login-box">
+            <h1>Sentinel Watchtower</h1>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard Screen -->
+    <div id="dashboard-screen" class="hidden">
+        <header>
+            <div class="logo">Sentinel Watchtower</div>
+            <div class="nav-links">
+                <span id="user-name">User</span>
+                <span class="badge" id="user-role">Student</span>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <div id="dashboard-content" class="dashboard-grid">
+                <!-- Dynamic Content Loaded Here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
